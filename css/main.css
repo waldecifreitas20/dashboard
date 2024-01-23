@@ -1,0 +1,23 @@
+:root {
+    --bg-transparent : hsla(0, 0%, 100%, 0.05);
+    --border-transparent : hsla(0, 0%, 100%, 0.06);
+    --bg-dark : rgb(6, 6, 26);
+    --bg-purple: rgb(90, 50, 143);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+
+    background-color: var(--bg-dark);
+}
+
+aside {
+    background-color: var(--bg-purple);
+}
