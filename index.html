@@ -7,21 +7,24 @@
         <title>Dashboard</title>
 
         <link rel="stylesheet" href="./css/main.css">
-        <link rel="stylesheet" href="./css/breakpoints/xl.css">
-        <link rel="stylesheet" href="./css/breakpoints/lg.css">
-        <link rel="stylesheet" href="./css/breakpoints/md.css">
-        <link rel="stylesheet" href="./css/breakpoints/sm.css">
         <link rel="stylesheet" href="./css/breakpoints/xs.css">
+        <link rel="stylesheet" href="./css/breakpoints/sm.css">
+        <link rel="stylesheet" href="./css/breakpoints/md.css">
+        <link rel="stylesheet" href="./css/breakpoints/lg.css">
+        <link rel="stylesheet" href="./css/breakpoints/xl.css">
 
+        
     </head>
 
     <body>
-        <aside>
-            <section>
-                <div class="profile">
+        <aside id="menu" class="">
+            <section id="top">
+                <div id="profile">
                     <img src="./assets/images/avatar.jpg" alt="" id="userphoto">
-                    <span id="username">Simson Wili</span>
-                    <a href="">simsonwel.com</a>
+                    <div id="user-info">
+                        <span id="username">Simson Wili</span>
+                        <a href="">simsonwel.com</a>
+                    </div>
                 </div>
 
                 <form action="">
@@ -31,30 +34,42 @@
 
             <section>
                 <article>
+                    <h3 class="aside-section-title">main</h3>
+                    
+                    <nav>
+                        <ul>
+                            <li><a href="">Dashboard</a></li>
+                            <li class="active"><a href="">Analysts</a></li>
+                            <li><a href="">Contacts</a></li>
+                        </ul>
+                    </nav>
 
-                    <h4 class="aside-section-title">main</h4>
-                    <ul>
-                        <li><a href="">Dashboard</a></li>
-                        <li class="active"><a href="">Analysts</a></li>
-                        <li><a href="">Contacts</a></li>
-                    </ul>
                 </article>
 
                 <article>
-                    <h4 class="aside-section-title">other</h4>
-                    <ul>
-                        <li><a href="">Subscriptions</a></li>
-                        <li><a href="">Generate prompt</a></li>
-                        <li><a href="">My team</a></li>
-                    </ul>
+                    <h3 class="aside-section-title">other</h3>
+                    
+                    <nav>
+
+                        <ul>
+                            <li><a href="">Subscriptions</a></li>
+                            <li><a href="">Generate prompt</a></li>
+                            <li><a href="">My team</a></li>
+                        </ul>
+                    </nav>
+
                 </article>
 
                 <article>
-                    <h4 class="aside-section-title">actions</h4>
-                    <ul>
-                        <li><a href="">settings</a></li>
-                        <li><a href="">appearance</a></li>
-                    </ul>
+                    <h3 class="aside-section-title">actions</h3>
+                    
+                    <nav>
+                        <ul>
+                            <li><a href="">settings</a></li>
+                            <li><a href="">appearance</a></li>
+                        </ul>
+                    </nav>
+
                 </article>
 
 
@@ -72,6 +87,12 @@
             </section>
 
         </aside>
+        <main>
+            <div id="menu-toggler">
+                <input type="checkbox" value="Menu" id="btn-menu">
+                <label for="btn-menu">Menu</label>
+            </div>
+        </main>
     </body>
-
+    <script src="./js/main.js"></script>
 </html>

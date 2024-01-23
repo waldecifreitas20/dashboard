@@ -1,8 +1,9 @@
 :root {
-    --bg-transparent : hsla(0, 0%, 100%, 0.05);
-    --border-transparent : hsla(0, 0%, 100%, 0.06);
-    --bg-dark : rgb(6, 6, 26);
+    --bg-dark: rgb(6, 6, 26);
+    --bg-transparent: hsla(0, 0%, 100%, 0.137);
     --bg-purple: rgb(90, 50, 143);
+    --border-transparent: hsla(0, 0%, 100%, 0.06);
+    --section-text: rgba(255, 255, 255, 0.5);
 }
 
 * {
@@ -11,13 +12,77 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
 body {
     height: 100vh;
     width: 100vw;
 
+    font-family: 'Trebuchet MS', 'Lucida Sans', sans-serif;
+
     background-color: var(--bg-dark);
 }
 
+
+
 aside {
-    background-color: var(--bg-purple);
+    padding: 30px 25px;
+}
+
+#profile img {
+    border-radius: 1em;
+    ;
+}
+
+#profile {
+    display: flex;
+
+}
+
+#profile #user-info #username {
+    color: white;
+}
+
+#profile div * {
+    display: block;
+}
+
+aside article *,
+#profile #user-info a {
+    color: var(--section-text);
+}
+
+#profile #user-info a {
+    font-size: 0.9em;
+}
+
+.dispose {
+    position: absolute;
+    top: 0;
+    left: -999px;
+}
+
+.show {
+    display: block;
+}
+
+#menu {
+    transition: all 1s;
+}
+
+#menu-toggler input {
+    display: none;
+}
+
+#menu-toggler label {
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    background-color: var(--bg-transparent);
 }
