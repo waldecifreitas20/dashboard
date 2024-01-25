@@ -1,10 +1,11 @@
 :root {
     --bg-dark: rgb(6, 6, 26);
-    --bg-transparent: hsla(0, 0%, 100%, 0.05);
+    --bg-lighter: rgb(32, 32, 54);
+    --bg-light: rgb(19, 19, 36);
     --bg-purple: rgb(93, 46, 155);
     --border-transparent: hsla(0, 0%, 100%, 0.068);
     --section-text: rgba(255, 255, 255, 0.5);
-    --border-radius: .8em;
+    --border-radius: .6em;
 
 }
 
@@ -30,8 +31,6 @@ body {
 
     background-color: var(--bg-dark);
 }
-
-
 
 aside section {
     padding: 0 25px;
@@ -100,7 +99,7 @@ aside article *,
 
 #aside-top {
     padding-top: 30px;
-    padding-bottom: 25px;
+    padding-bottom: 15px;
     border-bottom: 1px solid var(--border-transparent);
 }
 
@@ -125,6 +124,7 @@ aside article {
     border-radius: var(--border-radius);
     line-height: 30px;
     text-indent: 20px;
+    /* padding: 2px 0; */
 }
 
 #menu-list ul a:hover {
@@ -139,5 +139,5 @@ aside article {
 
 .aside-section-title,
 #menu-list ul a {
-    font-size: 13px;
+    font-size: 12px;
 }
