@@ -1,11 +1,11 @@
+/* active menu toggler */
 const btnMenu = document.querySelector("#btn-menu");
 const menu = document.getElementById("aside");
 
-/* active menu toggler */
-btnMenu.addEventListener('change', (evt)=> {
-    let isChecked = evt.target.checked;
-    
-    if (isChecked) {
+btnMenu.addEventListener('change', (evt) => {
+    let isHidden = !evt.target.checked;
+
+    if (isHidden) {
         menu.classList.remove('show');
         menu.classList.add('dispose');
     } else {
@@ -14,6 +14,7 @@ btnMenu.addEventListener('change', (evt)=> {
     }
 });
 
+/* active privacy toggler */
 const radioGroup = document.querySelectorAll("#aside-footer .radio-group");
 
 const btnPublicPrivacy = document.getElementById("public-radio").addEventListener('click', () => {
