@@ -3,9 +3,9 @@ const btnMenu = document.querySelector("#btn-menu");
 const menu = document.getElementById("aside");
 
 btnMenu.addEventListener('change', (evt) => {
-    let isHidden = !evt.target.checked;
+    let isShown = !evt.target.checked;
 
-    if (isHidden) {
+    if (isShown) {
         menu.classList.remove('show');
         menu.classList.add('dispose');
     } else {

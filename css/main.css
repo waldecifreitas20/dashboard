@@ -46,6 +46,10 @@ body {
     background-color: var(--bg-light-primary);
 }
 
+aside {
+    padding: 20px 0;
+}
+
 aside section {
     padding: 0 25px;
 }
