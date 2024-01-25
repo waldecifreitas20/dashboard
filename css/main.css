@@ -1,11 +1,13 @@
 :root {
     --bg-light-primary: rgb(248, 248, 248);
     --bg-light-weak: rgb(228, 226, 226);
-    --bg-light-secondary: rgb(243, 91, 210);
+    --bg-light-secondary: rgb(247, 108, 216);
     --bg-light-tertiary: rgb(255, 109, 223);
-    --bg-light-active: rgb(226, 56, 189);
+    --bg-light-active: rgb(241, 14, 192);
+
     --light-primary-text: rgb(44, 44, 44);
     --light-secondary-text: rgb(71, 71, 71);
+    --light-shadow:  rgba(71, 71, 71, 0.411);
 
     --bg-dark-primary: rgb(6, 6, 26);
     --bg-dark-secondary: rgb(32, 32, 54);
@@ -44,10 +46,6 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans', sans-serif;
 
     background-color: var(--bg-light-primary);
-}
-
-aside {
-    padding: 20px 0;
 }
 
 aside section {
@@ -181,10 +179,10 @@ aside-footer {
     padding: 2px;
 }
 
-#aside-footer .active label {
+.active {
     color: var(--dark-primary-text);
     background: linear-gradient(90deg, var(--bg-light-active), transparent);
-
+    border-radius: var(--border-radius);
 }
 
 #aside-footer .radio-group label {
