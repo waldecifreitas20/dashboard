@@ -1,7 +1,7 @@
 :root {
     --bg-dark: rgb(6, 6, 26);
     --bg-transparent: hsla(0, 0%, 100%, 0.05);
-    --bg-purple: rgb(102, 54, 163);
+    --bg-purple: rgb(93, 46, 155);
     --border-transparent: hsla(0, 0%, 100%, 0.068);
     --section-text: rgba(255, 255, 255, 0.5);
     --border-radius: .8em;
@@ -108,10 +108,11 @@ aside article *,
     padding-bottom: 30px;
 }
 
+
 .aside-section-title {
     text-transform: uppercase;
-    font-size: .95em;
-    margin-bottom: 15px;
+    font-weight: 300;
+    margin-bottom: 10px;
 }
 
 aside article {
@@ -122,14 +123,21 @@ aside article {
 #menu-list ul a {
     display: block;
     border-radius: var(--border-radius);
-    line-height: 38px;
-    padding: 0px 5px;
+    line-height: 30px;
     text-indent: 20px;
 }
 
 #menu-list ul a:hover {
-    background:
-        radial-gradient(ellipse at bottom, var(--bg-purple), transparent);
-    border: 2px solid rgb(45, 37, 65);
+    background: radial-gradient(farthest-corner at 50% 150%, var(--bg-purple), transparent);
+    box-shadow: 0px 0px 4px rgb(135, 112, 194);
     color: white;
+}
+
+#menu-list ul a {
+    text-transform: capitalize;
+}
+
+.aside-section-title,
+#menu-list ul a {
+    font-size: 13px;
 }
