@@ -1,10 +1,22 @@
 :root {
-    --bg-dark: rgb(6, 6, 26);
-    --bg-lighter: rgb(32, 32, 54);
-    --bg-light: rgb(19, 19, 36);
+    --bg-light-primary: rgb(248, 248, 248);
+    --bg-light-weak: rgb(228, 226, 226);
+    --bg-light-secondary: rgb(243, 91, 210);
+    --bg-light-tertiary: rgb(255, 109, 223);
+    --bg-light-active: rgb(226, 56, 189);
+    --light-primary-text: rgb(44, 44, 44);
+    --light-secondary-text: rgb(71, 71, 71);
+
+    --bg-dark-primary: rgb(6, 6, 26);
+    --bg-dark-secondary: rgb(32, 32, 54);
+    --bg-dark-tertiary: rgb(19, 19, 36);
     --bg-purple: rgb(93, 46, 155);
-    --border-transparent: hsla(0, 0%, 100%, 0.068);
-    --section-text: rgba(255, 255, 255, 0.5);
+
+
+    --dark-primary-text: rgb(255, 255, 255);
+    --dark-secondary-text: rgb(206, 206, 206);
+
+    --border-transparent: hsl(0, 0%, 87%);
     --border-radius: .6em;
 
 }
@@ -13,6 +25,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline-color: var(--bg-light-active);
 }
 
 
@@ -30,7 +43,7 @@ body {
 
     font-family: 'Trebuchet MS', 'Lucida Sans', sans-serif;
 
-    background-color: var(--bg-dark);
+    background-color: var(--bg-light-primary);
 }
 
 aside section {
@@ -48,7 +61,7 @@ aside section {
 }
 
 #profile #user-info #username {
-    color: white;
+    color: var(--light-primary-text);
 }
 
 #profile div * {
@@ -57,7 +70,8 @@ aside section {
 
 aside article *,
 #profile #user-info a {
-    color: var(--section-text);
+    color: var(--light-primary-text);
+    color: var(--light-secondary-text);
 }
 
 #profile #user-info a {
@@ -109,6 +123,8 @@ aside article *,
     border-bottom: 1px solid var(--border-transparent);
 }
 
+
+/* navigation menu */
 #menu-list {
     padding-bottom: 30px;
 }
@@ -134,9 +150,8 @@ aside article {
 }
 
 #menu-list ul a:hover {
-    background: radial-gradient(farthest-corner at 50% 150%, var(--bg-purple), transparent);
-    box-shadow: 0px 0px 4px rgb(135, 112, 194);
-    color: white;
+    color: var(--dark-primary-text);
+    background: linear-gradient(90deg, var(--bg-light-secondary), transparent);
 }
 
 #menu-list ul a {
@@ -149,29 +164,30 @@ aside article {
 }
 
 
+
+/* aside footer */
 aside-footer {
     margin: 30px 0;
 }
 
-#aside-footer article{
+#aside-footer article {
     border-radius: var(--border-radius);
     border: 1px solid var(--border-transparent);
-    background-color: var(--bg-light);
+    background-color: var(--bg-light-weak);
     padding: 2px;
 }
 
-#aside-footer .radio-group {
-    display: block;
-    padding: 12px 7px;
-    border-radius: .5em;
-}
+#aside-footer .active label {
+    color: var(--dark-primary-text);
+    background: linear-gradient(90deg, var(--bg-light-active), transparent);
 
-#aside-footer .active {
-    background-color: var(--bg-lighter);
 }
 
 #aside-footer .radio-group label {
+    border-radius: .5em;
     display: block;
+    text-indent: 15px;
+    line-height: 35px;
     font-size: .8em;
 }
 
