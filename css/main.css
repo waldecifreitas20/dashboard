@@ -179,7 +179,7 @@ aside-footer {
     padding: 2px;
 }
 
-.active {
+.active, .active * {
     color: var(--dark-primary-text);
     background: linear-gradient(90deg, var(--bg-light-active), transparent);
     border-radius: var(--border-radius);

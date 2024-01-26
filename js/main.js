@@ -16,12 +16,15 @@ btnMenu.addEventListener('change', (evt) => {
 
 /* active privacy toggler */
 const radioGroup = document.querySelectorAll("#aside-footer .radio-group");
+radioGroup[0].classList.add('active');
 
 const btnPublicPrivacy = document.getElementById("public-radio").addEventListener('click', () => {
-    radioGroup[0].classList.add('active');
     radioGroup[1].classList.remove('active');
+    radioGroup[0].classList.add('active');
+    console.log(radioGroup);
 });
 const btnPrivatePrivacy = document.getElementById("private-radio").addEventListener('click', () => {
     radioGroup[0].classList.remove('active');
     radioGroup[1].classList.add('active');
+    console.log(radioGroup);
 });
